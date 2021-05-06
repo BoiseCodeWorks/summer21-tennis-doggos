@@ -1,0 +1,43 @@
+:root {
+    --theme: #19686d;
+    --theme-gray: #f3f3f3;
+}
+
+.bg-theme {
+    background-color: var(--theme);
+}
+
+.bg-theme-gray {
+    background-color: var(--theme-gray);
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+
+.hero{
+    height: 100vh;
+    background-image: url(https://cdn.shopify.com/s/files/1/2006/8755/articles/unnamed_07beb919-3965-4407-9e81-1ad788eac4ca_1260x.jpg?v=1596476114);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.fix-picture{
+    object-fit: cover;
+}
+
+
+.cta-box {
+    position: absolute;
+    top: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .cta-box {
+        position: relative;
+    }
+}
